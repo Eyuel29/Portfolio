@@ -1,0 +1,106 @@
+.container{
+    margin: 1rem;
+}
+
+.contact{
+    padding: 4rem 0rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.dark .contact{
+    background: #222d50;
+}
+
+.light .contact{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 0.1rem;
+}
+
+.contact-title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    width: 65vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.input{
+    width:80%;
+    margin: 1rem;
+    outline: none;
+    padding: 2rem;
+    border: none;
+}
+
+.input-text{
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-align: left;
+    resize: none;
+    background: inherit;
+    color: inherit;
+    box-shadow: rgba(65, 83, 143, 0.02) 0px 1px 3px 0px, 
+    rgba(65, 83, 143, 0.15) 0px 0px 0px 0.2rem;
+}
+
+.input-button{
+    cursor: pointer;
+    background: #3556c4;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.light .input-text{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 0.1rem;
+}
+
+.input-text:focus{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 0.2rem;
+}
+
+.contact-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.contact-socials li {
+    list-style: none;
+    margin: 2rem auto;
+}
+
+.contact-socials li a{
+    color: #6573a3;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-info ul {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.contact-info li{
+    list-style: none;
+    opacity: 0.8;
+    margin: 0.5rem 0.2rem;
+    font-size: 1.4rem;
+    text-align: start;
+}
+
+.icon-colored{
+    width: 10rem;
+    font-size: 5rem;
+}

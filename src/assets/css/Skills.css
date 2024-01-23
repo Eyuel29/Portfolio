@@ -1,0 +1,33 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 4rem auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;  
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+.technology{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1.5rem 3rem;
+    background: #222d50;
+}
+
+.light .technology{
+    background: #A2D5AB;
+}
+
+.technology img {
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+
+.skill-set > p{
+    font-size: 1.8rem;
+    margin: 8rem;
+}

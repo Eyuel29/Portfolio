@@ -1,0 +1,128 @@
+.navbar-top{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 8rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.dark .navbar-top{
+    background: #171e35;
+}
+
+.light .navbar-top{
+    background: #ffe3e3;
+}
+
+.nav-title{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 1.5rem;
+}
+
+.logo{
+    width: 4em;
+    border-radius: 50%;
+    border: #a8c500 solid 0.2rem;
+    display: inline-block;
+}
+
+.nav-board{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.nav-link.active li{
+    color: #c55f24;
+    font-weight: bolder;
+}
+
+.nav-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-options li{
+    list-style: none;
+    font-weight: 500;
+    margin: 1rem 1.5rem;
+}
+
+.nav-options a:hover{
+    color: #c55f24;
+}
+
+.rotating-nav-icon, .nav-icon{
+    font-size: 2rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.rotating-nav-icon:hover{
+    transform: rotate(-90deg);
+    transition: 0.4s ease-in-out;
+}
+
+.nav-dropdown{
+    width: 40%;
+    padding: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 6;
+    right: 0rem;
+    background: inherit;
+    border-radius: 0.5rem;
+}
+
+.dark .nav-dropdown{
+    background: #171e35;
+}
+
+.light .nav-dropdown{
+    background: #ffe3e3;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 0.1rem;
+}
+.mobile-nav-options{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.mobile-menu-btn{
+    display: none;
+}
+
+@media screen and (max-width: 690px) {
+    .mobile-menu-btn{
+        display: block;
+    }
+
+    .nav-options-section{
+        display: none;
+    }
+}
