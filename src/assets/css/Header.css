@@ -90,7 +90,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    z-index: 6;
+    z-index: 4;
     right: 0rem;
     background: inherit;
     border-radius: 0.5rem;
