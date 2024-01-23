@@ -1,9 +1,9 @@
 export const getTheme = () =>{
-    return localStorage.getItem("theme-portfolio");
+    return localStorage.getItem("theme-setting");
 }
 
 export const changeSetting = (theme) =>{
-        localStorage.setItem("theme-portfolio",theme);
+        localStorage.setItem("theme-setting",theme);
 }
 
 export const initTheme = () =>{
