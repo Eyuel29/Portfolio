@@ -1,0 +1,13 @@
+.about-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-img img{
+    border-radius: 50%;
+    width: 35rem;
+    border: 0.5rem #222d50 solid ;
+}
