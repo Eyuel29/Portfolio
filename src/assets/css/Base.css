@@ -23,7 +23,7 @@ body{
 .dark{
     background: #171e35;
     color: #ffe3e3;
-    scrollbar-color: revert;
+    /* scrollbar-color: revert; */
 }
 
 .dark a {
