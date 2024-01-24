@@ -1,5 +1,3 @@
-import { GrGithub } from "react-icons/gr";
-import { GoArrowUpRight } from "react-icons/go";
 import '../../assets/css/Projects.css';
 
 const ProjectCard = (props) =>{
@@ -9,8 +7,7 @@ const ProjectCard = (props) =>{
             <img className="project-image" src={project.src} alt="note" />
             <div className="project-header">
                 <h1 className="project-title">{project.title}</h1>
-                {/* {<GrGithub className="github-link"/>} */}
-                <a target="blank" className="project-link" href={project.link}> <GoArrowUpRight className="github-link"/> </a> 
+                {/* <a target="blank" className="project-link" href={project.link}> <GoArrowUpRight className="github-link"/> </a>  */}
             </div>
             <div className="project-body">
                 <p>{project.body}</p>

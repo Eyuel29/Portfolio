@@ -1,9 +1,10 @@
-import { useState } from "react";
+ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {BsFillMoonFill, BsFillSunFill} from 'react-icons/bs';
 import {FiArrowUp, FiMenu } from 'react-icons/fi';
 import '../../assets/css/Header.css';
 import MobileNav from "./MobileNav";
+import SlideY from "../utils/SlideY";
 
 
 const Header = (props) =>{
@@ -12,7 +13,6 @@ const Header = (props) =>{
     
     const toggleMenu = () =>{
         setMobileMenu(!mobileMenu);
-
     }
     
 
@@ -20,7 +20,7 @@ const Header = (props) =>{
         <>
         <div className='navbar-top' id='navbar-top'>
             <div className='nav-title'>
-                <h1 className='title'>Joel</h1>
+                <h1 className='title'>JOEL</h1>
             </div>  
 
             <div className='nav-board'>
@@ -33,10 +33,10 @@ const Header = (props) =>{
 
                 <div className='nav-options-section'>
                     <ul className='nav-options'>
-                       <NavLink className={'nav-link'} to={'/about'}    ><li>About   </li></NavLink>
-                       <NavLink className={'nav-link'} to={'/projects'} ><li>Projects</li></NavLink>
-                       <NavLink className={'nav-link'} to={'/skills'}   ><li>Skills  </li></NavLink>
-                       <NavLink className={'nav-link'} to={'/contact'}  ><li>Contact </li></NavLink>
+                       <NavLink className={'nav-link'} to={'/about'}    onClick={() => {window.scrollTo(0,0)}} ><li>About   </li></NavLink>
+                       <NavLink className={'nav-link'} to={'/projects'} onClick={() => {window.scrollTo(0,0)}} ><li>Projects</li></NavLink>
+                       <NavLink className={'nav-link'} to={'/skills'}   onClick={() => {window.scrollTo(0,0)}} ><li>Skills  </li></NavLink>
+                       <NavLink className={'nav-link'} to={'/contact'}  onClick={() => {window.scrollTo(0,0)}} ><li>Contact </li></NavLink>
                     </ul>
                 </div>
 
@@ -47,7 +47,13 @@ const Header = (props) =>{
             
             </div>
         </div>
-        {mobileMenu === true ? <MobileNav className="mobile-navbar"/> : null}
+        <div>{mobileMenu === true ? 
+                    <MobileNav
+                     menuState={mobileMenu}
+                     menuHandler={setMobileMenu}
+                     className="mobile-navbar"/>
+         : null}
+         </div>
         </>
     );
 }

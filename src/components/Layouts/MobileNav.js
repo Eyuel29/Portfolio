@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
 import SlideY from "../utils/SlideY";
 
-const MobileNav = () =>{
+const MobileNav = (props) =>{
+
+    const menuHandler = props.menuHandler;
+    const menuState = props.menuState;
+
+    const navLinkClicked = () =>{
+        window.scrollTo(0, 0);
+        menuHandler(!menuState);
+    }
 
     return(
-        
         <SlideY
         delay={100}
         y1={-500}
@@ -13,13 +20,13 @@ const MobileNav = () =>{
         opacity2={1} >
             <div className='nav-dropdown'>
                 <ul className='mobile-nav-options'>
-                    <NavLink onClick={window.scrollTo(0,0)} className={'nav-link'} to={'/about'}    ><li>About   </li></NavLink>
-                    <NavLink onClick={window.scrollTo(0,0)} className={'nav-link'} to={'/projects'} ><li>Projects</li></NavLink>
-                    <NavLink onClick={window.scrollTo(0,0)} className={'nav-link'} to={'/skills'}   ><li>Skills  </li></NavLink>
-                    <NavLink onClick={window.scrollTo(0,0)} className={'nav-link'} to={'/contact'}  ><li>Contact </li></NavLink>
+                    <NavLink onClick={navLinkClicked} className={'nav-link'} to={'/about'}    ><li>About   </li></NavLink>
+                    <NavLink onClick={navLinkClicked} className={'nav-link'} to={'/projects'} ><li>Projects</li></NavLink>
+                    <NavLink onClick={navLinkClicked} className={'nav-link'} to={'/skills'}   ><li>Skills  </li></NavLink>
+                    <NavLink onClick={navLinkClicked} className={'nav-link'} to={'/contact'}  ><li>Contact </li></NavLink>
                 </ul>
             </div>
-        </SlideY>
+            </SlideY>
     );
 }
 

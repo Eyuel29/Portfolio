@@ -1,6 +1,4 @@
-.container{
-    margin: 1rem;
-}
+.container{ margin: 1rem; }
 
 .contact{
     padding: 4rem 0rem;
@@ -8,9 +6,7 @@
     margin: auto;
 }
 
-.dark .contact{
-    background: #222d50;
-}
+.dark .contact{ background: #222d50; }
 
 .light .contact{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
@@ -103,4 +99,10 @@
 .icon-colored{
     width: 10rem;
     font-size: 5rem;
+}
+
+@media screen and (max-width: 820px) {
+    .contact-form{
+        width: 85vw;
+    }   
 }

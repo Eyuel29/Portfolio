@@ -1,5 +1,5 @@
 .projects-list{
-    margin :0rem 4rem;
+    margin :0rem;
     max-width: 150rem;
 }
 
@@ -16,7 +16,6 @@
     margin: 3rem auto;
     display: flex;  
     flex-direction: column;
-    position: relative;
     border-radius: 0.5rem;
     overflow: hidden;
     z-index: 3;
@@ -120,12 +119,6 @@
 
 @media screen and (max-width: 820px) {
     .projects-list{
-        grid-template-columns: repeat(2, 1fr);
         margin :0rem;
     }
-}
-@media screen and (max-width: 490px) {
-    .projects-list{
-        grid-template-columns: repeat(1, 1fr);
-    }   
 }
